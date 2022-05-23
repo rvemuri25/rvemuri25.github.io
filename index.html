@@ -4,131 +4,84 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <title>Name | WD2 Portfolio</title>
+
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
     ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="colorgenerator tile">
-          <div id="textCode">
-            <input value="#123456" type="text" id="hexColor" />
-          </div>
-          <div id="buttonRow">
-            <button id="colorBtn">Color</button>
-            <button id="copyBtn">Copy</button>
-          </div>
-        </div>
-        <div class="timedate tile">
-          <p id="textDate"></p>
-        </div>
+    <header>
+      <h1 class="title__name">Rishi Vemuri</h1>
+    </header>
+    <banner>
+      <img alt="Image of website author" class="author__image" src="https://cdn.glitch.global/217bff91-1308-4e7c-b0c9-2f2c480e19bd/alexander-hipp-iEEBWgY_6lA-unsplash.jpg?v=1652798836727" />
+      <h2 class="title__handle">@rvemuri25 on GitHub</h2>
+      <div class="icon__row">
+        <ion-icon name="logo-html5"></ion-icon>
+        <ion-icon name="logo-css3"></ion-icon>
+        <ion-icon name="logo-javascript"></ion-icon>
       </div>
-      <div class="row">
-        <div class="focustimer tile">
-          <div class="timerSelect">
-            <button class="timerBtn 1Btn">5</button>
-            <button class="timerBtn 2Btn">15</button>
-            <button class="timerBtn 3Btn">25</button>
-          </div>
-          <div class="timeDisplay">00:00</div>
-          <button class="timeButton" id="startStop">
-            <ion-icon name="play-outline"></ion-icon>
-          </button>
-        </div>
-        <div class="tictactoe tile">
-          <h4>Tic Tac Toe (with colors)</h4>
-
-          <div class="game-container">
-            <div class="gamerow">
-              <button class="gamesquare" id="a1"></button>
-              <button class="gamesquare" id="a2"></button>
-              <button class="gamesquare" id="a3"></button>
-            </div>
-            <div class="gamerow">
-              <button class="gamesquare" id="b1"></button>
-              <button class="gamesquare" id="b2"></button>
-              <button class="gamesquare" id="b3"></button>
-            </div>
-            <div class="gamerow">
-              <button class="gamesquare" id="c1"></button>
-              <button class="gamesquare" id="c2"></button>
-              <button class="gamesquare" id="c3"></button>
-            </div>
-          </div>
-        </div>
+    </banner>
+    <div class="main">
+      
+    
+    <div class="row__html">
+      <div class="description descript__html">
+      <h3 class="title__descript">
+        HTML + CSS
+        </h3>
+        <p class="para__html">
+          Here is a collection of work displaying my knowledge and implementation of advanced CSS + HTML properties. Included are examples of CSS Grid, Flexbox, forms, animations using keyframes, transformations, transistions, and pseudoelements.
+        </p>
       </div>
-      <div class="row">
-        <div class="tipcalc tile">
-          <div class="calctext">
-            <div class="inputs">
-              <div>
-                <p>Bill Total</p>
-                <input type="number" id="totalBill" placeholder="Bill Total" />
-                <p>Quality of Service</p>
-                <div class="tipAmounts">
-                  <button class="tipBtn10 tipBtn" id="tip10">10</button>
-                  <button class="tipBtn15 tipBtn" id="tip15">15</button>
-                  <button class="tipBtn20 tipBtn" id="tip20">20</button>
-                  <button class="tipBtn25 tipBtn" id="tip25">25</button>
-                </div>
-              </div>
-              <div>
-                <p>Number Of People</p>
-                <input
-                  type="number"
-                  id="numPeopleInput"
-                  placeholder="Number of People"
-                />
-              </div>
-              <button id="calculate">Calculate Tip</button>
-            </div>
-            <div class="output">
-              <h2>Total</h2>
-              <p>/per person</p>
-              <p id="outputBill">$0.00</p>
-              <p class="bar"></p>
-              <h2>Total Tip</h2>
-              <p>/per person</p>
-              <p id="outputTip">$0.00</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="collatz tile">
-          <h4>
-            Collatz Conjecture 
-          Enter ur num
-          </h4>
-          <input placeholder="type a num" type="number" min="1" />
-          <button type="submit" id="collatzSubmit">
-            
-          </button>
-          <div class="collatzOutput"></div>
-          <div class="hailstone">
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="togglemode">
-        <button id="toggleDark">Dark</button>
-        <button id="toggleLight">Light</button>
+      <div class="assignments">
+        <ul class="assign__list__html">
+          <li class="assign__item"><a class="assign__link" href="https://brawny-woolen-coneflower.glitch.me">Order Summary Component</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-forms-performance.glitch.me">Address Form Component</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://zippy-crystalline-herring.glitch.me">Live Icon Animation</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://quixotic-sepia-serpent.glitch.me">Testimonials Component</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-card-performance.glitch.me">Dynamic Cards Component</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-travel-website.glitch.me">Travel Website</a></li>
+        </ul>
       </div>
     </div>
+    <div class="row__js">
+      <div class="assignments">
+        <ul class="assign__list__html">
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-color-generator.glitch.me">Hex Color Generator</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-digital-clock.glitch.me">Digital Clock</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-focus-timer.glitch.me">Focus Timer</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://charm-whip-tellurium.glitch.me">Todo List App</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://golden-raspy-sodalite.glitch.me">Tip Calculator</a></li>
+          <li class="assign__item"><a class="assign__link" href="https://vemuri-javascript-summative.glitch.me">Productivity Page</a></li>
+        </ul>
+      </div>
+      <div class="description descript__JS">
+      <h3 class="title__descript">
+        JavaScript
+        </h3>
+        <p class="para__html">
+          Here is a collection of work displaying my knowledge and implementation of Vanilla JavaScript. Included are examples of functions, event listeners, math methods, class list manipulations, interval functions, and more.
+        </p>
+      </div>
+    </div>
+      </div>
+    <footer>
+      Instagram: @rvemuri07
+      Facebook: Rishi Vemuri
+    </footer>
   </body>
 </html>
